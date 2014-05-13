@@ -1,9 +1,9 @@
 -debug
 -target:library
 -nowarn:0169
--out:'Temp/Assembly-CSharp.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-out:Temp/Assembly-CSharp.dll
+-r:F:/apps/unity/Editor/Data/Managed/UnityEngine.dll
+-r:F:/apps/unity/Editor/Data/Managed/UnityEditor.dll
 -define:UNITY_STANDALONE_OSX
 -define:ENABLE_MICROPHONE
 -define:ENABLE_TEXTUREID_MAP
@@ -35,7 +35,8 @@
 -define:UNITY_4_3
 -define:ENABLE_PROFILER
 -define:UNITY_EDITOR
--define:UNITY_EDITOR_OSX
-'Assets/Scripts/PlayerController.cs'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
+-define:UNITY_EDITOR_WIN
+Assets/Scripts/CameraFollow.cs
+Assets/Scripts/PlayerController.cs
+-r:F:/apps/unity/Editor/Data/Mono\lib/mono/unity\System.Runtime.Serialization.dll
+-r:F:/apps/unity/Editor/Data/Mono\lib/mono/unity\System.Xml.Linq.dll
